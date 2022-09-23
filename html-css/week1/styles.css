@@ -1,0 +1,190 @@
+/* Selects all elements */
+* {
+    font-size: 23px;
+}
+
+body {
+    margin: 25px 0 0 110px;
+    background-color: #888888;
+    width: 1366px;
+    /* If the browser does not support the first font, it tries the next font */
+    font-family: 'Dangrek', cursive;
+    border-style: groove;
+    border-width: 5px;
+}
+
+#my-cv {
+    float: left;
+
+    /* Writes text in upper case */
+    text-transform: uppercase;
+    padding: 0 0 0 100px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+
+    /* Specifies the width and color of strokes for text characters */
+    -webkit-text-stroke: 0.1px #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    text-align: right;
+
+    /* Navbar always stays in the same place even if the page is scrolled */
+    position: fixed;
+    width: 1366px;
+    background-color: rgb(85, 85, 85, 0.3);
+}
+
+.navbar .menu li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Select and style an element when the mouse hovers over it */
+.navbar ul li:hover {
+    cursor: pointer;
+    transition: 2s;
+    background-color: #ffffff;
+    border-radius: 20%;
+
+    /* Resizes an element */
+    transform: scale(1.5);
+}
+
+.container {
+    width: 1366px;
+    margin: auto;
+}
+
+.first-block {
+    float: left;
+    background-color: #555555;
+}
+
+.picture-and-quote {
+    float: left;
+    padding: 100px 0 0 60px;
+}
+
+.img {
+    width: 250px;
+    margin: 0 0 0 50px;
+    border: 6px solid #78c6ca;
+    border-radius: 50%;
+}
+
+blockquote {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    color: #000000;
+}
+
+h3 {
+    font-size: 26px;
+    color: #000000;
+}
+
+.name-and-place {
+    float: right;
+    padding: 50px 500px 0 0;
+}
+
+.second-block {
+    line-height: 0.8;
+    font-weight: 100;
+}
+
+.about-me {
+    padding: 30px 150px 20px 525px;
+    line-height: normal;
+    background-color: #888888;
+}
+
+.left-block {
+    background-color: #555555;
+    float: left;
+    padding: 0 50px 0 100px;
+    margin: 10px 0 0 0;
+    border-style: groove;
+    border-width: 5px;
+}
+
+.icon {
+    width: 50px;
+}
+
+.languages {
+    width: 300px;
+    padding: 10px;
+}
+
+.myProgress {
+    width: 100%;
+    background-color: black;
+}
+
+.ua-lang,
+.ru-lang,
+.eng-lang,
+.dk-lang {
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    margin: -20px;
+}
+
+.eng-lang,
+.dk-lang {
+    width: 70%;
+}
+
+.myProgress,
+.ua-lang,
+.ru-lang,
+.eng-lang,
+.dk-lang {
+    padding: 10px 0 0 5px;
+}
+
+.education-and-work {
+    float: right;
+    padding: 0 20px 0 20px;
+    background-color: #ffffff;
+    margin: 10px 0 0 0;
+    border-style: groove;
+    border-width: 5px;
+}
+
+hr {
+    border: 3px solid #555555;
+    border-radius: 5px;
+}
+
+.work .year,
+.education .year {
+    font-size: 15px;
+    color: #555555;
+}
+
+/* Matches elements based on their position among a group of siblings */
+.education:nth-child(odd) {
+    color: #555555;
+}
