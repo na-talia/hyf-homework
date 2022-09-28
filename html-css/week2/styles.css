@@ -1,0 +1,237 @@
+* {
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    font-size: 18px;
+}
+
+.header {
+    background-color: #f9f9f9;
+    padding: 40px 0 40px 200px;
+    line-height: 1rem;
+}
+
+.header p:last-child {
+    color: #829095;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    padding: 20px 0 0 200px;
+    font-weight: 600;
+}
+
+.nav-bar li:hover {
+
+    /* Resizes an element */
+    transform: scale(1.5);
+    transition: 2s;
+    cursor: pointer;
+}
+
+/* Сhanges the color of the second child of the <li> tag */
+.nav-bar li:nth-child(2) {
+    color: #829095;
+}
+
+.picture {
+    width: 100%;
+}
+
+.web-dev {
+    transition: 4s;
+}
+
+/* Moves the element */
+.web-dev:hover {
+    transform: translate(8%);
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article>* {
+    margin: 50px 0 80px 200px;
+}
+
+/* Changes the color of the each <p> tag inside the .article class */
+.article p:nth-of-type(n) {
+    color: #829095;
+}
+
+.left-article,
+.left-section {
+    width: 25%;
+}
+
+.right-article,
+.right-section {
+    width: 40%;
+    font-size: 20px;
+}
+
+/* Rotates an element around a fixed point when the mouse hovers over it */
+.images img:hover {
+    animation: rotate 3s infinite;
+}
+
+/* Specifies the animation rule */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: #6736cd;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 300px 0 200px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+/* Selects children inside the <ul> tag in the 3d and 4th child of <div> tag */
+.footer>div:nth-child(3)>ul,
+.footer>div:nth-child(4)>ul {
+    padding: 0;
+}
+
+.map {
+    padding: 20px 0 0 0;
+}
+
+.logo {
+    width: 20%;
+    padding: 0 20px 0 0;
+}
+
+/* Selects all elements inside the <ul> tag */
+.footer div ul>* {
+    border-bottom: 2px solid #829095;
+    padding: 15px 0 15px 0;
+    text-transform: capitalize;
+}
+
+.footer div:nth-child(2) {
+    line-height: 1.6rem;
+}
+
+/* Mobile phone section */
+@media screen and (max-width: 414px) {
+    .header {
+        padding: 0 50px 20px 50px;
+        line-height: normal;
+    }
+
+    .nav-bar,
+    .footer {
+        padding: 0 0 20px 50px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-article,
+    .right-article,
+    .left-section,
+    .right-section {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 0 20px 50px;
+    }
+
+    /* Swaps the order of elements */
+    .right-article {
+        order: 1;
+    }
+
+    .left-article {
+        order: 2;
+    }
+
+    .left-section {
+        order: 3;
+    }
+
+    .right-section {
+        order: 4;
+    }
+}
+
+/* Tab section */
+@media screen and (max-width: 912px) {
+    .right-article {
+        order: 1;
+    }
+
+    .left-article {
+        order: 2;
+    }
+
+    .left-section {
+        order: 3;
+    }
+
+    .right-section {
+        order: 4;
+    }
+
+    .header {
+        padding: 20px 0 0 20px;
+        line-height: normal;
+    }
+
+    .nav-bar {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .picture {
+        width: 100%;
+    }
+
+    .left-article,
+    .right-article,
+    .left-section,
+    .right-section,
+    .footer {
+        width: fit-content;
+        margin: 20px;
+    }
+
+    .footer {
+        display: block;
+        padding: 20px;
+        width: 75%;
+    }
+}
