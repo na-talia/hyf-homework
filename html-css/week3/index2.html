@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframes</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./logo.png" />
+    <link rel="stylesheet" href="./next-button.png" />
+  </head>
+  <body>
+    <main>
+      <div class="nav-bar">
+        <img src="./logo.png" alt="logo" class="logo" />
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>About us</li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="sign-up">Sign up to yourcustomtailor.com</h1>
+      <div class="progress">
+        <h2>Step 2/4 - how can we reach you?</h2>
+        <span>Progress</span>
+        <div class="progress-bar">
+          <div class="your-progress2"></div>
+        </div>
+        <p class="nice-to-meet">
+          We will probably need to stay in touch somehow. Let us know how we can
+          reach you?
+        </p>
+      </div>
+      <form action="./index3.html" method="get" class="who-you-are">
+        <div class="input-row">
+          <label for="email">Email*</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}"
+            title="Please enter your email"
+            required
+          />
+          <label for="tel">Phone</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="+[0-9]{10}"
+            minlength="8"
+            title="Please enter your phone number"
+          />
+        </div>
+        <div class="input-row">
+          <label for="password">Password*</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="10"
+            pattern="(?=.*[a-z])(?=.*[A-Z]"
+            placeholder="min 10 characters"
+            required
+          />
+          <!-- Uppercase and lowercase letters -->
+        </div>
+        <div class="input-row">
+          <label for="re-password">Re-enter Password*</label>
+          <input
+            type="password"
+            name="re-password"
+            id="re-password"
+            pattern="(?=.*[a-z])(?=.*[A-Z]"
+            placeholder="min 10 characters"
+            required
+          />
+        </div>
+        <p class="input-row">I want to sign up for the newsletter</p>
+        <div class="input-row">
+          <label for="weekly">Weekly news</label>
+          <input
+            type="radio"
+            name="weekly"
+            id="weekly"
+            value="weekly"
+            checked
+          />
+          <label for="monthly">Monthly news</label>
+          <input type="radio" name="monthly" id="monthly" value="monthly" />
+          <label for="dont">Don`t send me news</label>
+          <input type="radio" name="dont" id="dont" value="dont" />
+        </div>
+        <div class="input-row submit">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="next">
+          <a href="./index3.html">
+            <img src="./next-button.png" alt="next-icon" class="next-icon"
+          /></a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

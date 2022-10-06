@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframes</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./logo.png" />
+    <link rel="stylesheet" href="./next-button.png" />
+  </head>
+  <body>
+    <main>
+      <div class="nav-bar">
+        <img src="./logo.png" alt="logo" class="logo" />
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>About us</li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="sign-up">Sign up to yourcustomtailor.com</h1>
+      <div class="progress">
+        <h2>Step 4/4 - Payment</h2>
+        <span>Progress</span>
+        <div class="progress-bar">
+          <div class="your-progress4"></div>
+        </div>
+        <p class="nice-to-meet">Please fill in your payment data</p>
+      </div>
+      <form action="./index.html" method="get" class="who-you-are">
+        <div class="input-row">
+          <label for="name-on-card">Name on card*</label>
+          <input type="text" name="name-on-card" id="name-on-card" required />
+        </div>
+        <div class="input-row">
+          <label for="card-type">Card type*</label>
+          <select name="card-type" id="card-type" required>
+            <option value="">select</option>
+            <option value="master-card">Master card</option>
+            <option value="visa">Visa</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <label for="credit-card-number">Credit card number*</label>
+          <input
+            type="number"
+            name="credit-card-number"
+            id="credit-card-number"
+            required
+          />
+        </div>
+        <div class="input-row">
+          <label for="first-name">First name*</label>
+          <input type="text" name="first-name" id="first-name" required />
+        </div>
+        <div class="input-row">
+          <label for="month">Expiry month*</label>
+          <select name="month" id="month" required>
+            <option value="">select</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+          <label for="year">Expiry year*</label>
+          <select name="year" id="year" required>
+            <option value="">select</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <label for="ccv">CCV*</label>
+          <input
+            type="password"
+            name="ccv"
+            id="ccv"
+            minlength="3"
+            maxlength="3"
+            required
+          />
+        </div>
+        <div class="input-row submit">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="next">
+          <a href="./index.html">
+            <img src="./next-button.png" alt="next-icon" class="next-icon"
+          /></a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

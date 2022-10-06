@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframes</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./logo.png" />
+    <link rel="stylesheet" href="./next-button.png" />
+  </head>
+  <body>
+    <main>
+      <div class="nav-bar">
+        <img src="./logo.png" alt="logo" class="logo" />
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>News</li>
+            <li>About us</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sign-up">
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p class="sign-up-first-part">
+          We can't wait to help you improve your life-style and gain the
+          attention from people around you!
+        </p>
+        <p>
+          Sign up below to save up to 70% on apparel, hand-bags and cosmetics.
+          Our agents are busy picking the best offers that match your
+          preferences and style. Every week we will send you a hand-picked
+          selection- we just need to know a few details about your first...
+        </p>
+      </div>
+      <div class="progress">
+        <h2>Step 1/4 - tell us who you are?</h2>
+        <span>Progress</span>
+        <div class="progress-bar"><div class="your-progress1"></div></div>
+        <p class="nice-to-meet">
+          Nice to meet you. Let's spend a minute to get to know each other?
+          Please enter the following:
+        </p>
+      </div>
+      <form action="./index2.html" method="get" class="who-you-are">
+        <div class="input-row">
+          <label for="fname">First name*</label>
+          <input type="text" name="fname" id="fname" required />
+          <label for="lname">Last name*</label>
+          <input type="text" name="lname" id="lname" required />
+        </div>
+        <div class="input-row">
+          <label for="country">Country*</label>
+          <select name="country" id="country" required>
+            <option value="">select</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Sweden">Sweden</option>
+            <option value="USA">USA</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Poland">Poland</option>
+          </select>
+        </div>
+        <div class="input-row">
+          <label for="address">Street address*</label>
+          <input type="text" name="address" id="address" required />
+          <label for="code">Post code*</label>
+          <input
+            type="text"
+            name="code"
+            id="code"
+            pattern="[1-9]{4}"
+            placeholder="* * * *"
+            required
+          />
+        </div>
+        <div class="input-row description">
+          <div class="profile-description">
+            <label for="description">Profile description</label>
+            <p>
+              Please provide a short description of yourself to be displayed on
+              our social community pages.
+            </p>
+          </div>
+          <textarea
+            name="description"
+            id="description"
+            cols="80"
+            rows="10"
+            maxlength="500"
+            placeholder="About you..."
+          ></textarea>
+        </div>
+        <div class="input-row">
+          <p>
+            Use the same address for billing and shipping? Uncheck below to fill
+            out a separate shipping address.
+          </p>
+          <label for="shipping">Shipping address</label>
+          <input
+            type="checkbox"
+            name="shipping"
+            id="shipping"
+            class="input-row checkbox"
+            required
+          />
+        </div>
+        <div class="input-row submit">
+          <button type="submit">Submit</button>
+        </div>
+        <div class="next">
+          <a href="./index2.html">
+            <img src="./next-button.png" alt="next-icon" class="next-icon"
+          /></a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

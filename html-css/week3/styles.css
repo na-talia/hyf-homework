@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.logo {
+  padding: 0 0 0 3rem;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 3rem;
+  color: #05386b;
+  font-weight: 700;
+}
+
+li:hover {
+  cursor: pointer;
+  transition: 2s;
+  background-color: #accbee;
+  border-radius: 2rem;
+  text-decoration: underline;
+}
+
+/* Description part for all pages */
+
+.sign-up,
+.progress {
+  margin: 3rem 0 3rem 5rem;
+  width: 85%;
+}
+
+.sign-up-first-part {
+  margin: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.progress h2 {
+  color: #05386b;
+  margin-bottom: 2rem;
+}
+
+/* Progress part, all pages */
+
+.progress-bar {
+  height: 3.4rem;
+  border: 0.2rem solid #05386b;
+  border-radius: 20rem;
+  box-sizing: border-box;
+}
+
+.progress-bar,
+.nice-to-meet {
+  display: block;
+  margin: 1rem 0 0 0;
+}
+
+.your-progress1, /* Progress for the first page */
+.your-progress2, /* Progress for the second page */
+.your-progress3, /* Progress for the third page */
+.your-progress4  /* Progress for the fourth page */ {
+  background-color: #accbee;
+  border-radius: 20rem;
+  height: 3rem;
+  position: relative;
+}
+
+/* Animation for the first page */
+
+.your-progress1 {
+  animation: progress1 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for the second page */
+
+.your-progress2 {
+  animation: progress2 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for the third page */
+
+.your-progress3 {
+  animation: progress3 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for the fourth page */
+
+.your-progress4 {
+  animation: progress4 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for the first page */
+
+@keyframes progress1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+/* Animation for the second page */
+
+@keyframes progress2 {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* Animation for the third page */
+
+@keyframes progress3 {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+/* Animation for the fourth page */
+
+@keyframes progress4 {
+  from {
+    width: 60%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+/* Entry form, all pages */
+
+.who-you-are {
+  padding: 1.5rem;
+  position: relative;
+}
+
+/* Selects all children inside the .who-you-are class */
+
+.who-you-are:nth-child(n) {
+  width: 85%;
+  margin: 0 0 0 5rem;
+  color: #05386b;
+  border: 0.2rem solid #05386b;
+  border-radius: 2rem;
+  line-height: 3rem;
+}
+
+.input-row {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  padding: 1rem;
+}
+
+.input-row img {
+  width: 30%;
+}
+
+input,
+select,
+textarea,
+label {
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border-color: #05386b;
+  border-radius: 1rem;
+  background-color: #e7f0fd;
+}
+
+label {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.description {
+  display: flex;
+}
+
+.profile-description {
+  width: 30%;
+  margin: 0 1rem 0 0;
+  line-height: normal;
+}
+
+.profile-description > label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.profile-description > p {
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #e7f0fd;
+}
+
+select,
+::placeholder {
+  color: #7395ae;
+}
+
+.submit,
+.next,
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.next {
+  padding: 2rem 0 0 0;
+}
+
+.logo,
+.next-icon {
+  width: 7rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 5rem;
+  color: #05386b;
+  border-color: #05386b;
+  font-weight: 700;
+}
+
+/* Style for third page */
+
+.items-checkbox {
+  display: block;
+}
+
+/* Mobile phone section */
+
+@media screen and (max-width: 414px) {
+  .who-you-are:nth-child(n),
+  .progress,
+  .sign-up,
+  .description,
+  .images,
+  textarea,
+  h1,
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo {
+    padding: 1rem;
+  }
+
+  ul li {
+    flex-direction: column;
+    display: flex;
+    line-height: normal;
+    padding: 0.3rem;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .description .profile-description,
+  .progress-bar {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+}
