@@ -1,0 +1,6 @@
+first movie second movie
+<<<<<<< HEAD
+fourth movie
+=======
+third movie
+>>>>>>> c8a2935d9c89740d22f489d901ecf1af69f31928
