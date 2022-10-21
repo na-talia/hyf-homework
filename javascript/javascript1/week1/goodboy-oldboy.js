@@ -1,5 +1,5 @@
 const dogYearOfBirth = 2020;
-let dogYearFuture = 2035;
+const dogYearFuture = 2035;
 const humanYear = dogYearFuture - dogYearOfBirth;
 const dogYear = humanYear * 7;
 const shouldShowResultInDogYears = true;
