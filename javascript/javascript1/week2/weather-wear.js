@@ -28,3 +28,20 @@ function pickTheClothes(temperature) {
 
 const clothesToWear2 = pickTheClothes(-5);
 console.log(clothesToWear2);
+
+// Using switch
+
+let temperature = 30;
+switch (true) {
+  case temperature < 0:
+    console.log("You should wear a jacket, hat and gloves");
+    break;
+  case temperature < 10:
+    console.log("You should wear a coat");
+    break;
+  case temperature < 20:
+    console.log("You should wear a jacket");
+    break;
+  default:
+    console.log("You should wear a t-shirt");
+}
