@@ -1,7 +1,7 @@
 function getFullName(firstname, surname, useFormalName, gender) {
-  if (useFormalName === true && gender === "male") {
+  if (useFormalName && gender === "male") {
     return `Lord ${firstname} ${surname}`;
-  } else if (useFormalName === true && gender === "female") {
+  } else if (useFormalName && gender === "female") {
     return `Lady ${firstname} ${surname}`;
   } else {
     return `${firstname} ${surname}`;

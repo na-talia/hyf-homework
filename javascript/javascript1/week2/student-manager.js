@@ -35,3 +35,4 @@ addStudentToClass("Kira");
 
 getNumberOfStudents();
 console.log(`There are ${class07Students.length} students in the class`);
+console.log(`There are ${getNumberOfStudents()} students in the class`);

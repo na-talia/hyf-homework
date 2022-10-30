@@ -8,9 +8,9 @@ const days = [
   "Saturday",
 ];
 function getEventWeekday(daysToEvent) {
-  let today = new Date();
+  const today = new Date();
 
-  let eventDay = (today.getDay() + daysToEvent) % days.length;
+  const eventDay = (today.getDay() + daysToEvent) % days.length;
   console.log(
     /* Here also could be used .toDateString() method, 
     but .toLocaleString() shows only the day of the week, this is exactly what I wanted */
