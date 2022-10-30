@@ -26,6 +26,24 @@ addCandy();
 addCandy("chewing-gum", 100);
 console.log(boughtCandyPrices);
 
+// Another method (better)
+
+const boughtCandyPrices2 = [];
+const candyPrice2 = {
+  sweet: 0.5,
+  chocolate: 0.7,
+  toffee: 1.1,
+  chewingGum: 0.03,
+};
+function addCandy2(candyType, weight) {
+  boughtCandyPrices2.push(weight * candyPrice2[candyType]);
+}
+addCandy2("sweet", 20);
+addCandy2("chocolate", 5);
+addCandy2("toffee", 30);
+addCandy2("chewingGum", 2);
+
+console.log(boughtCandyPrices2);
 // Can I buy more?
 const amountToSpend = (Math.random() * 100).toFixed(2); // .toFixed(2) shows only 2 digits after the decimal point
 
