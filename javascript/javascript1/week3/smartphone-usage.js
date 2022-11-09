@@ -1,5 +1,10 @@
 const activities = [];
 function addActivity(date, activity, duration) {
+  // Added activity and duration check
+  if (activity === "" || typeof duration !== "number") {
+    console.log("Please enter your activity and duration in correct format");
+    return;
+  }
   activities.push({ date, activity, duration });
   console.log(`${date} I watched ${activity} for ${duration} minutes`);
 }
@@ -12,7 +17,7 @@ console.log(activities);
 
 addActivity(date, "Youtube", 60);
 addActivity(date, "TikTok", 20);
-addActivity(date, "TV", 30);
+addActivity(date, "", "h");
 
 function showStatus() {
   let activityTime = 0;

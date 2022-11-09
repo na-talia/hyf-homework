@@ -11,16 +11,16 @@ console.log(notes);
 // Get a note
 
 function getNote(id) {
-  for (let note of notes) {
-    if (note.id == isNaN(id)) {
-      return "Error";
-    } else {
-      for (let note of notes) {
-        if (note.id === id) return note;
-      }
+  //
+  if (typeof id !== "number") {
+    return "Error"; // returns Error if id is not a number
+  } else {
+    for (let note of notes) {
+      if (note.id === id) return note;
     }
   }
 }
+
 const firstNote = getNote(1);
 console.log(firstNote);
 const secondNote = getNote(2);
