@@ -46,16 +46,17 @@ function getReply(command) {
     //console.log(num1, num2);
     let operator = numArr[numArr.length - 4];
     //console.log(operator);
-    if (operator === "+") {
-      return Number(num1) + Number(num2);
-    } else if (operator === "-") {
-      return num2 - num1;
-    } else if (operator === "*") {
-      return num1 * num2;
-    } else if (operator === "/") {
-      return num2 / num1;
-    } else {
-      return "Please add numbers";
+    switch (operator) {
+      case "+":
+        return Number(num1) + Number(num2);
+      case "-":
+        return Number(num2) - Number(num1);
+      case "*":
+        return Number(num1) * Number(num2);
+      case "/":
+        return Number(num2) / Number(num1);
+      default:
+        return "Please add numbers";
     }
   } else if (command.includes("Set a timer")) {
     const timer = command.split(" ");
