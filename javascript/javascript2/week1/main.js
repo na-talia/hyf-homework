@@ -19,5 +19,18 @@ function renderProducts() {
     prodUl.appendChild(prodRate);
   });
 }
+// Writing in template string
+
+/*
+function renderProducts() {
+  products.forEach((product) => {
+    const markup = `
+     <h2> ${product.name} </h2>
+  <li> Price: ${product.price} </li>
+   <li> Rating: ${product.rating} </li>`;
+    return (document.body.innerHTML = markup);
+  });
+}
+*/
 
 renderProducts();
