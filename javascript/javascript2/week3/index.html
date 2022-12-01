@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS2 Week3</title>
+    <link rel="stylesheet" href="./game.css" />
+  </head>
+  <body>
+    <button id="delay-btn">Click</button>
+    <button id="location-btn">Log location</button>
+    <div id="your-location"></div>
+    <a id="find-on-map" target="_blank"></a>
+    <section class="input-and-buttons">
+      <input type="number" id="seconds" />
+      <button id="get-seconds" class="start">Start Game</button>
+      <button id="reset" class="reset">Reset Game</button>
+    </section>
+    <section class="press-button">
+      <span id="press-s" class="press-s"></span>
+      <span id="press-l" class="press-l"></span>
+    </section>
+    <div class="info">
+      <div id="key"></div>
+      <div id="winner"></div>
+      <div id="game-over"></div>
+      <div id="count-down" class="game-over"></div>
+    </div>
+    <canvas id="confetti-winner"> </canvas>
+    <script src="./warmup.js"></script>
+    <script src="./function-as-a-variable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+    <script src="./the-fastest-presser.js"></script>
+  </body>
+</html>
