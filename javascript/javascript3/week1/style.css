@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+main,
+iframe {
+  background-color: #f9c5e0;
+  border: #f9c5e0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+input {
+  margin: 1rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.weather-app {
+  margin: 2rem;
+  padding: 1rem;
+  border: 0.2rem #ffff solid;
+  background-image: url(white-elements.png);
+}
+
+.gif-number {
+  width: 5%;
+}
+
+.giphy-api {
+  background-image: url(rp9w4l_large.png);
+}
