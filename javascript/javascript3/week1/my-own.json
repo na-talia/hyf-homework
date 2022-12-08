@@ -1,0 +1,39 @@
+{
+  "Eurovision winners": [
+    {
+      "Year": 2017,
+      "Country": "Portugal",
+      "Artist": "Salvador Sobral",
+      "Song": "Amar Pelos Dois",
+      "Song in English": false
+    },
+    {
+      "Year": 2018,
+      "Country": "Israel",
+      "Artist": "Netta",
+      "Song": "Toy",
+      "Song in English": true
+    },
+    {
+      "Year": 2019,
+      "Country": "The Netherlands",
+      "Artist": "Duncan Laurence",
+      "Song": "Arcade",
+      "Song in English": true
+    },
+    {
+      "Year": 2021,
+      "Country": "Italy",
+      "Artist": "Maneskin",
+      "Song": "Zitti e buoni",
+      "Song in English": false
+    },
+    {
+      "Year": 2022,
+      "Country": "Ukraine",
+      "Artist": "Kalush Orchestra",
+      "Song": "Stefania",
+      "Song in English": false
+    }
+  ]
+}
