@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 3 Week1</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./white-elements.png" />
+    <link rel="stylesheet" href="./rp9w4l_large.png" />
+  </head>
+  <body>
+    <!-- A cool API -->
+    <script src="./a-cool-api.js"></script>
+    <!-- Weather app -->
+    <main>
+      <section class="weather-app">
+        <h2>Weather App</h2>
+        <input type="text" placeholder="City" id="weather-input" />
+        <button id="input-button">Show me the weather</button>
+        <div>
+          <img src="./waiting.png" alt="Loading..." id="loading" />
+        </div>
+        <div id="input-city"></div>
+        <div id="temperature"></div>
+        <img src="" id="weather-icon" />
+        <div id="wind-speed"></div>
+        <div id="cloudy"></div>
+        <div id="sunrise-sunset"></div>
+      </section>
+      <!-- Giphy API -->
+      <section class="giphy-api">
+        <h2>Giphy API</h2>
+        <input type="text" placeholder="Search for GIF" id="gif-name" />
+        <input
+          type="number"
+          placeholder="№"
+          class="gif-number"
+          id="gif-numbers"
+        />
+        <button id="gif-button">Search for GIF</button>
+        <div class="container" id="container"></div>
+      </section>
+    </main>
+    <script src="./weather-app.js"></script>
+    <script src="./giphy-api.js"></script>
+  </body>
+</html>
