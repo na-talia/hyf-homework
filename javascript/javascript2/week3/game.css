@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-and-buttons,
+input {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+input {
+  width: 4rem;
+  text-align: center;
+}
+
+.start,
+.reset {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-weight: 800;
+}
+
+.press-button {
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+
+.press-s {
+  background-color: #acdfb5;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.press-l {
+  background-color: #dfacd6;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.info {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.game-over {
+  font-size: 2rem;
+  font-weight: 700;
+}
