@@ -13,7 +13,7 @@ function showWeather() {
   loading.style.visibility = "visible"; // loading icon is visible
   let city = weatherInput.value;
 
-  if (city.length === 0) {
+  if (!city.length) {
     city = localStorage.getItem("latestCity", city);
   }
   fetch(
@@ -28,7 +28,7 @@ function showWeather() {
       document.getElementById(
         "temperature"
       ).innerHTML = `<b>Temperature:</b> ${Math.round(
-        data.main.temp - 273
+        data.main.temp - 273.15
       )} °C`; // convert Kelvin to Celsius
 
       document.getElementById(
