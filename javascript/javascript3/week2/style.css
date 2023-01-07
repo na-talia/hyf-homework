@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+body {
+  background: rgb(54, 42, 34);
+  background: radial-gradient(
+    circle,
+    rgba(54, 42, 34, 1) 40%,
+    rgba(243, 238, 246, 1) 92%
+  );
+  color: #ffff;
+}
+
+.input-elements {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.input-value {
+  width: 5%;
+  font-weight: 700;
+}
+
+span,
+input {
+  margin-left: 2rem;
+}
+
+input,
+select {
+  padding: 0.8rem;
+}
+
+.button {
+  font-weight: 700;
+}
+
+.exchange {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.exchange-result {
+  font-size: 3rem;
+}
