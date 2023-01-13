@@ -43,7 +43,7 @@ JOIN status ON status.id = task.status_id;
 
 /* Get the name of each status, along with a count of how many tasks have that status */
 SELECT status.name, 
-COUNT(*) as number 
+COUNT(task.id) as number 
 FROM task 
 JOIN status ON status.id = task.status_id 
 GROUP BY status.name;
