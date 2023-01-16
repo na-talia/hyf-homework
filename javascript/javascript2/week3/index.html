@@ -13,21 +13,25 @@
     <div id="your-location"></div>
     <a id="find-on-map" target="_blank"></a>
     <section class="input-and-buttons">
-      <input type="number" id="seconds" />
+      <input type="number" id="seconds" placeholder="Sec" />
       <button id="get-seconds" class="start">Start Game</button>
       <button id="reset" class="reset">Reset Game</button>
     </section>
     <section class="press-button">
-      <span id="press-s" class="press-s"></span>
-      <span id="press-l" class="press-l"></span>
+      <span id="press-s" class="press-s">
+        <p>S key</p>
+      </span>
+      <span id="press-l" class="press-l">
+        <p>L key</p>
+      </span>
     </section>
+    <canvas id="confetti-winner"> </canvas>
     <div class="info">
       <div id="key"></div>
       <div id="winner"></div>
       <div id="game-over"></div>
       <div id="count-down" class="game-over"></div>
     </div>
-    <canvas id="confetti-winner"> </canvas>
     <script src="./warmup.js"></script>
     <script src="./function-as-a-variable.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
