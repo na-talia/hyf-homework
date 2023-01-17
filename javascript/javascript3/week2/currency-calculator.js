@@ -33,7 +33,6 @@ const secondCurrency = document.getElementById("second-currency");
 //Add <option> inside the <select> from Const currencies1 and currencies2
 const getData = (data) => {
   return Object.entries(data).map(([country, currency]) => {
-    console.log(country, currency);
     return `<option value="${country}">${country} - ${currency}</option>`;
   });
 };
@@ -66,6 +65,7 @@ const showCurrency = (data, firstValue, secondValue, amount) => {
     data.conversion_rates[firstValue] === data.conversion_rates[secondValue]
   ) {
     console.log(firstValue, secondValue);
+    document.getElementById("exchange-result").innerText = "";
     todaysRate.innerText = "Please select another currency";
   } else {
     todaysRate.innerHTML = `<b>Today\'s exchange rate: </b> ${data.conversion_rates[secondValue]}`;

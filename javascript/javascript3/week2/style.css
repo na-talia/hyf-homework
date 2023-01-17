@@ -16,6 +16,8 @@ body {
 }
 
 .input-elements {
+  display: flex;
+  justify-content: center;
   margin: 2rem;
   padding: 1rem;
   text-align: center;
@@ -37,7 +39,7 @@ select {
   padding: 0.8rem;
 }
 
-.button {
+input[type="button"] {
   font-weight: 700;
 }
 
