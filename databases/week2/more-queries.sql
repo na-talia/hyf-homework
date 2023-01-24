@@ -10,17 +10,17 @@ WHERE  user.email LIKE '%@spotify.com';
 
 /* Get all the tasks for 'Donald Duck' with status 'Not started' */
 
-SELECT user_task.task_id ,task.title 
-FROM user_task 
+SELECT user_task.task_id ,task.title,user.name,status.name
+FROM user_task
   JOIN user ON user.id = user_task.user_id
-  JOIN task ON task.id = user_task.task_id 
+  JOIN task ON task.id = user_task.task_id
   JOIN status ON status.id = task.status_id
 WHERE user.name = 'Donald Duck' AND status.name = 'Not started';
 
 /* Get all the tasks for 'Maryrose Meadows' that were created in september
  (hint: month(created)=month_number)*/
 
-SELECT user.name, task.title, status.name AS task_created
+SELECT task.id, user.name, task.title, status.name AS Status_Name
 FROM user
   JOIN user_task ON user.id = user_task.user_id
   JOIN task ON task.id = user_task.task_id
@@ -32,8 +32,8 @@ AND month(created)= 09;
  e.g. how many tasks were created in october, how many tasks were created in november, etc.
   (hint: use group by) */
 
-SELECT count(id) AS total_task, 
-  month(created) AS Month 
-FROM task 
+SELECT count(id) AS total_task,
+  MONTHNAME(created) AS Month
+FROM task
 GROUP BY Month;
 
