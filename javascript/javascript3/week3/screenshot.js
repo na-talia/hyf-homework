@@ -17,7 +17,7 @@ const inputUrl = async () => {
     },
   };
 
-  fetch(
+  await fetch(
     `https://${HOST_URL}/screenshot?url=https://${enterUrl.value}&width=1920&height=1080&fullscreen=true`,
     options
   )
@@ -26,9 +26,8 @@ const inputUrl = async () => {
     .catch((err) => console.error(err));
 
   allScreenshots.push(` ${enterUrl.value}`);
-  console.log(enterUrl.value);
-  console.log(allScreenshots);
   list.innerHTML = `<div class="saved-screenshots">You have saved ${allScreenshots.length} screenshots:<br>${allScreenshots}</div>`;
+  return response;
 };
 
 const saveScreenshot = (post) => {
@@ -39,7 +38,7 @@ const saveScreenshot = (post) => {
   div.appendChild(p);
 
   const img = document.createElement("img");
-  img.src = post.screenshot;
+  img.src = post.response;
   div.appendChild(img);
 
   const button = document.createElement("button");
@@ -61,7 +60,7 @@ const deleteScreenshot = async (id) => {
 };
 
 // Post screenshot
-const postScreenshot = async (event) => {
+async function postScreenshot(event) {
   event.preventDefault();
 
   if (!enterUrl.value) {
@@ -84,6 +83,6 @@ const postScreenshot = async (event) => {
     screenshots.appendChild(saveScreenshot(data));
   }
   enterUrl.value = "";
-};
+}
 
 button.addEventListener("click", postScreenshot);
