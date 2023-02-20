@@ -29,7 +29,6 @@ contactsAPIRouter.get("/", async (req, res) => {
     const splitQuery = req.query.sort.toString().split(" ");
     if (splitQuery.length > 0) {
       query = query.orderBy(splitQuery[0], splitQuery[1]); // e.g. order by first_name ASC or last_name DESK etc.
-      console.log(splitQuery); // e.g. [ 'first_name', 'DESK;', 'DROP', 'TABLE', 'contacts' ]
     }
   }
 
