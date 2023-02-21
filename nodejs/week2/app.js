@@ -58,7 +58,7 @@ app.get("/documents/:id", (req, res) => {
 app.post("/search", async (req, res) => {
   try {
     const queryParameter = req.query.q;
-    const bodyParameter = req.body;
+    const bodyParameter = req.body.fields;
 
     if (queryParameter && bodyParameter) {
       res.status(400).json({
