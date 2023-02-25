@@ -1,9 +1,9 @@
 import React from "react";
 
-const TodoItem = ({ description, deadline }) => {
+const TodoItem = ({ item }) => {
   return (
     <p>
-      {description} - {deadline}
+      {item.description} - {item.deadline}
     </p>
   );
 };

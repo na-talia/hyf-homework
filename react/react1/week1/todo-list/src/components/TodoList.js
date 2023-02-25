@@ -11,11 +11,7 @@ const todoList = () => {
   return (
     <div>
       {ourTodos.map((item) => (
-        <TodoItem
-          key={item.id}
-          description={item.description}
-          deadline={item.deadline}
-        />
+        <TodoItem key={item.id} item={item} />
       ))}
     </div>
   );
