@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-items {
+  list-style-type: none;
+}

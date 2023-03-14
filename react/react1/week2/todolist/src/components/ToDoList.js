@@ -51,7 +51,7 @@ const ToDoList = () => {
   return (
     <div>
       <button onClick={addTodo}>Add todo</button>
-      <ul style={{ listStyleType: "none" }}>{todoItems}</ul>
+      <ul className="todo-items">{todoItems}</ul>
     </div>
   );
 };
