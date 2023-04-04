@@ -1,5 +1,7 @@
 squash
 tomato
-cucumber
+broccoli
 carrot
 potato
+pepper
+onion
