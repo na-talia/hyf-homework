@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import TodoItem from "./TodoItem";
 
 const TodoList = () => {
@@ -10,17 +10,12 @@ const TodoList = () => {
   const [deadline, setDeadline] = useState("");
 
   // Fetch our todos
-  const fetchTodos = useCallback(() => {
-    fetch(API_URL)
-      .then((res) => res.json())
-      .then((data) => {
-        setTodos(data);
-      });
-  }, []);
 
   useEffect(() => {
-    fetchTodos();
-  }, [fetchTodos]);
+    fetch(API_URL)
+      .then((res) => res.json())
+      .then((data) => setTodos(data));
+  }, []);
 
   // Add a new Todo
 

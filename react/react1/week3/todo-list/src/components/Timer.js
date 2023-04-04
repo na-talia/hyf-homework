@@ -1,9 +1,14 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 const Timer = () => {
   const [count, setCount] = useState(0);
+
   useEffect(() => {
-    setTimeout(() => setCount(count + 1), 1000);
+    const time = setInterval(() => setCount(count + 1), 1000);
+    return () => clearTimeout(time);
   }, [count]);
+
   return <p>You have used {count} seconds on this website</p>;
 };
+
 export default Timer;
