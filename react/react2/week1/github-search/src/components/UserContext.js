@@ -15,13 +15,14 @@ const RenderUser = ({ children }) => {
       const response = await fetch(API_URL);
       const data = await response.json();
 
-      data.items
-        ? setUsers(data.items) && setError(false)
-        : setUsers([]) && setError("No results");
+      if (data.items) {
+        setUsers(data.items);
+      }
     } catch (error) {
       setError(error.message);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
