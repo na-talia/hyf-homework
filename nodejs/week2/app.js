@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 const documents = require("./documents.json");
 
 // Support parsing JSON requests
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
