@@ -1,4 +1,4 @@
-Chef's Salad
+## Chef's Salad
 
 Tear the lettuce into bite-sized pieces and put into a large mixing bowl. 
 Season with salt and pepper to taste and toss with 1/2 cup of the dressing. 
@@ -7,3 +7,4 @@ Arrange the cheese, meats, eggs, and avocado, like the spokes of a wheel, on top
 Scatter the tomatoes, cucumbers, and croutons on top. 
 Season with salt and pepper to taste. Serve and pass the remaining dressing at the table.
 
+# Enjoy!
